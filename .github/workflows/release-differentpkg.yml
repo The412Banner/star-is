@@ -143,6 +143,7 @@ jobs:
 
     - name: Rename APK
       run: |
+        mkdir -p app/build/outputs/apk/${{ matrix.flavor.name }}/debug
         mv ${{ matrix.flavor.apkPath }} \
            app/build/outputs/apk/${{ matrix.flavor.name }}/debug/${{ matrix.flavor.apkLabel }}-${{ github.event.inputs.release_number }}.apk
 
