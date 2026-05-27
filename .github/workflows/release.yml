@@ -189,3 +189,4 @@ jobs:
           ${{ github.event.inputs.release_notes }}
         files: app/build/outputs/apk/debug/star-nightly-${{ github.event.inputs.release_number }}.apk
         prerelease: true
+
